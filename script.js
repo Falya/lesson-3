@@ -64,7 +64,7 @@ function employers() {
 	for (let i = 0; i < 4; i++) {
 		let a = prompt("Введите имя " + (i + 1) + "-го сотрудника");
 		if ( (typeof(a) === 'string') && (a !== null && a != '' && a.length < 30 ) ) {
-			mainList.employers[(i + 1)] = a;
+			mainList.employers[(i + 1)] = ((i + 1) + " - " + a);
 				console.log("Всё верно");
 		} else {
 			i--;
@@ -89,4 +89,3 @@ workTime(21);
 alert( dayBudget(yourBudget) );
 
 console.log(mainList);
-console.log(mainList.employers)
